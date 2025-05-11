@@ -1,0 +1,23 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  gap: 8px;
+}
+
+.main__aside {
+  grid-row: span 2 / span 2;
+}
+
+.main__article {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+  border-inline: 2px solid black;
+}
+
+.main__section {
+  grid-row: span 2 / span 2;
+  grid-column-start: 5;
+  min-height: 100%;
+}

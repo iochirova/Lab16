@@ -1,0 +1,25 @@
+.header__list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+
+    background-color:goldenrod;
+    list-style-type: none;
+
+    margin: 0;
+    padding: 30px;
+}
+
+.header__list > li{
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+}
+
+
+.header__list > li > a{
+    text-decoration: none;
+    color: white;
+
+    font-size: 20px;
+}
